@@ -6,6 +6,11 @@
 
 Hi, my name is **Jia**. I'm a student at George Brown College.
 
+#### Contacts & Social Media
+
+*[:globe_with_meridians: My Homepage](https://www.facebook.com)
+*[:camera: Instagram](https://www.instagram.com)
+
 ### Lu Li
 
 #### Contacts & Social Media
