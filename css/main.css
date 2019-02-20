@@ -1,0 +1,35 @@
+.wrapper { 
+  display: grid; 
+  grid-template-columns: repeat(4, 1fr); 
+  grid-auto-rows: 200px; 
+} 
+
+.menu { 
+  grid-column-start: 1; 
+  grid-column-end: 2; 
+  grid-row-start: 1; 
+  grid-row-end: 3; 
+}
+
+.to_do_list { 
+  grid-column-start: 2; 
+  grid-column-end: 5;
+  grid-row-start: 1; 
+  grid-row-end: 5;
+}
+
+.calender { 
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3; 
+  grid-row-end: 5;
+}
+* {box-sizing: border-box;}
+
+.wrapper > div {
+  border: 2px solid #ffa94d;
+  border-radius: 5px;
+  background-color: #ffd8a8;
+  padding: 1em;
+  color: #d9480f;
+}
