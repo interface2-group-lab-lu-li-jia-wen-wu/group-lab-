@@ -1,8 +1,17 @@
+<<<<<<< HEAD
 .wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 250px;
 }
+=======
+.wrapper { 
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr); 
+  grid-auto-rows: minmax(250px, auto); 
+  grid-gap: 5px;
+} 
+>>>>>>> wjw-framework
 
 .menu {
   grid-column-start: 1;
@@ -129,3 +138,45 @@ body {font-family: Verdana, sans-serif;}
   background: #1abc9c;
   color: white !important
 }
+<<<<<<< HEAD
+=======
+
+.goal_small {
+  background-color:#fff4e6;
+  border-radius: 5px;
+  border: 5px #f76707;
+  padding: 10px;
+  margin: 10px;
+}
+
+.goals { 
+  grid-column-start: 1; 
+  grid-column-end: 1; 
+  grid-row-start: 1; 
+}
+
+.in_progress { 
+  grid-column-start: 2; 
+  grid-column-end: 2; 
+  grid-row-start: 1; 
+
+}
+
+.completed { 
+  grid-column-start: 3; 
+  grid-column-end: 3; 
+  grid-row-start: 1; 
+
+}
+
+img {
+  display: block;
+  margin: auto;
+  padding: 10px;
+}
+
+p{
+  font-weight: bold;
+  padding: 0 0 0 20px;
+}
+>>>>>>> wjw-framework
