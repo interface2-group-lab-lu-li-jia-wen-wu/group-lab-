@@ -23,14 +23,17 @@
         </div>
         <div class="to_do_list">
           <h2>To Do List</h2>
-          <textarea rows= "2" cols="30"></textarea>
-          <button>add</button>
-          <ul>
-          <li>Swimming 30 mins</li>
-          <li>Jogging 30 mins</li>
-          <li>Play basketball 30 mins</li>
-          <li>Push up 10 mins</li>
-        </ul>
+          <ol>
+          <li class="Workout"><label><input type="checkbox" name="task">Swimming 30 mins</label></li>
+          <li class="workout complete"><label><input type="checkbox" name="task" checked>Jogging 30 mins <label></li>
+          <li class="task"><label><input type="checkbox" name="task"> Play basketball 30</label></li>
+          </ol>
+          <form>
+          <label> New task:</label>
+          <input type="text" name="task">
+          <input type="submit" name="submit" value="Add">
+          </form>
+          </main>
         </div>
         <div class="calender">
           <h2>Calender</h2>
