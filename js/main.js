@@ -1,4 +1,4 @@
-let id = 000;
+/*let id = 000;
 let sport = 'Swimming';
 let number = 00;
 let unit = 'minutes';
@@ -45,3 +45,22 @@ let task_list = [
 ];
 
 console.log(task_list[1].id)
+*/
+var addTask = function() {
+
+  // Store the value from the 'amount' input in a variable (let)
+  let _task = document.getElementById('task').value;
+  // 1. Update the balance using the transaction value
+
+  // 2. Add a record to the history showing the amount deposited
+  document.getElementById('allTask').innerHTML += '<li>' + _task + '</li>';
+
+  // 3. If the balance is less than 0, make the balance red, else make it black
+    // A) change the style.color of the balance
+    //IF STATEMENT :
+      //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
+
+    // B) create a css class and .add() a class to the balance
+};
+
+document.getElementById('add').addEventListener('click', addTask);
