@@ -46,21 +46,27 @@ let task_list = [
 
 console.log(task_list[1].id)
 */
+
+//DATA SET
+let tasks = [
+  { id: 0, name: "Swimming 30 mins", complete: false },
+  { id: 1, name: "Jogging 30 mins", complete: true },
+  { id: 2, name: "Play basketball 30 mins", complete: false },
+  { id: 3, name: "Push up 10 mins", complete: false }
+];
+
+// SELECTING DOCUMENT ELEMENTS TO CHANGE
+const allTasks = document.getElementById('alltasks');  // our list of tasks (ol)
+
+
+// OUTPUT THE RESULTS
+allTasks.innerHTML = tasks.map(t => `<li class="task">${t.name}</li>` ).join('');
+
 var addTask = function() {
-
-  // Store the value from the 'amount' input in a variable (let)
+  //Store the value from the 'submit' input in a variable (let)
   let _task = document.getElementById('task').value;
-  // 1. Update the balance using the transaction value
-
-  // 2. Add a record to the history showing the amount deposited
-  document.getElementById('allTask').innerHTML += '<li>' + _task + '</li>';
-
-  // 3. If the balance is less than 0, make the balance red, else make it black
-    // A) change the style.color of the balance
-    //IF STATEMENT :
-      //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
-
-    // B) create a css class and .add() a class to the balance
+  tasks.push({ id: tasks.length, name: _task, complete: false});
+  allTasks.innerHTML = tasks.map(t => `<li class="task">${t.name}</li>` ).join('');
 };
 
 document.getElementById('add').addEventListener('click', addTask);
