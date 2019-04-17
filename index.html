@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Starfits</title>
     <meta name="description" content="Workout to do list">
@@ -8,97 +9,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel="stylesheet" href="css/reset.css"> -->
     <link rel="stylesheet" href="css/main.css">
-  </head>
-  <body>
+</head>
+
+<body>
 
     <header>
-      <div class="logo">Starfits Logo</div>
-      <h1 class="algin-center"> Starfits </h1>
-      <div class="wrapper">
-        <div class="menu">
-          <h2>Menu</h2>
-          <a href="today_task.html"><li>Today Task</li></a>
-          <a href="weekly_task_lu.html"><li>Weekly Task</li></a>
-          <a href="monthly.html"><li>Monthly Task</li></a>
-        </div>
-        <div class="to_do_list">
-          <h2>To Do List</h2>
-          <ol>
-          <li class="Workout"><label><input type="checkbox" name="task">Swimming 30 mins</label></li>
-          <li class="workout complete"><label><input type="checkbox" name="task" checked>Jogging 30 mins <label></li>
-          <li class="task"><label><input type="checkbox" name="task"> Play basketball 30</label></li>
-          </ol>
-          <form>
-          <label> New task:</label>
-          <input type="text" name="task">
-          <input type="submit" name="submit" value="Add">
-          </form>
-          </main>
-        </div>
-        <div class="calender">
-          <h2>Calender</h2>
-          <div class="month">
-  <ul>
-    <li class="prev">&#10094;</li>
-    <li class="next">&#10095;</li>
-    <li>
-      August<br>
-      <span style="font-size:18px">2019</span>
-    </li>
-  </ul>
-</div>
+        <div class="logo">Starfits Logo</div>
+        <h1 class="algin-center"> Starfits </h1>
+        <div class="wrapper">
+            <div class="menu">
+                <h2>Menu</h2>
+                <a href="today_task.html">
+                    <li>Today Task</li>
+                </a>
+                <a href="weekly_task_lu.html">
+                    <li>Weekly Task</li>
+                </a>
+                <a href="monthly.html">
+                    <li>Monthly Task</li>
+                </a>
+            </div>
+            <div class="to_do_list">
+                <h2>To Do List</h2>
+                <ol id="task_list">
+                    <li class="Workout">
+                        <label>
+                            <input type="checkbox" name="task">Swimming 30 mins</label>
+                    </li>
+                    <li class="workout complete">
+                        <label>
+                            <input type="checkbox" name="task" checked>Jogging 30 mins
+                            <label>
+                    </li>
+                    <li class="task">
+                        <label id="task_label">
+                            <input type="checkbox" name="task">Play basketball 30</label>
+                    </li>
+                </ol>
+                <div id="myFrom" class="header">
+                    <h2>My To Do List</h2>
+                    <input type="text" id="newTask" placeholder="Title...">
+                    <span onclick="newElement()" class="addBtn">Add</span>
+                </div>
+            </div>
+            <div class="calender">
+                <h2>Calender</h2>
+                <div class="month">
+                    <ul>
+                        <li class="prev">&#10094;</li>
+                        <li class="next">&#10095;</li>
+                        <li>
+                            August
+                            <br>
+                            <span style="font-size:18px">2019</span>
+                        </li>
+                    </ul>
+                </div>
 
-<ul class="weekdays">
-  <li>Mo</li>
-  <li>Tu</li>
-  <li>We</li>
-  <li>Th</li>
-  <li>Fr</li>
-  <li>Sa</li>
-  <li>Su</li>
-</ul>
+                <ul class="weekdays">
+                    <li>Mo</li>
+                    <li>Tu</li>
+                    <li>We</li>
+                    <li>Th</li>
+                    <li>Fr</li>
+                    <li>Sa</li>
+                    <li>Su</li>
+                </ul>
 
-<ul class="days">
-  <li>1</li>
-  <li>2</li>
-  <li>3</li>
-  <li>4</li>
-  <li>5</li>
-  <li>6</li>
-  <li>7</li>
-  <li>8</li>
-  <li>9</li>
-  <li><span class="active">10</span></li>
-  <li>11</li>
-  <li>12</li>
-  <li>13</li>
-  <li>14</li>
-  <li>15</li>
-  <li>16</li>
-  <li>17</li>
-  <li>18</li>
-  <li>19</li>
-  <li>20</li>
-  <li>21</li>
-  <li>22</li>
-  <li>23</li>
-  <li>24</li>
-  <li>25</li>
-  <li>26</li>
-  <li>27</li>
-  <li>28</li>
-  <li>29</li>
-  <li>30</li>
-  <li>31</li>
-</ul>
+                <ul class="days">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li><span class="active">10</span>
+                    </li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li>13</li>
+                    <li>14</li>
+                    <li>15</li>
+                    <li>16</li>
+                    <li>17</li>
+                    <li>18</li>
+                    <li>19</li>
+                    <li>20</li>
+                    <li>21</li>
+                    <li>22</li>
+                    <li>23</li>
+                    <li>24</li>
+                    <li>25</li>
+                    <li>26</li>
+                    <li>27</li>
+                    <li>28</li>
+                    <li>29</li>
+                    <li>30</li>
+                    <li>31</li>
+                </ul>
 
+            </div>
         </div>
-      </div>
     </header>
 
 
 
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
     <script src="js/main.js"></script>
-  </body>
+</body>
+
 </html>
